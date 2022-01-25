@@ -9,6 +9,10 @@ body{
     background-color: #ebebeb;
 }
 
+h2{
+    font-size: 20px;
+}
+
 h3{
     font-size: 24px;
 }
@@ -311,14 +315,14 @@ footer section{
 
 footer section p{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 footer section .icon {
     margin-top: 40px;
     color: #1259c3;
     font-size: 2em;
-    transition: all 500ms;
+    transition: all 200ms;
 }
 
 footer section:hover .icon {
@@ -340,7 +344,7 @@ footer section:hover .icon {
 
     .header-txt-compras {
         width: 33%;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     main section article .description{
@@ -385,6 +389,7 @@ footer section:hover .icon {
 
     .header-txt-compras {
         max-width: none;
+        font-size: 15px;
     }
 
     .main-navbar {
@@ -405,6 +410,6 @@ footer section:hover .icon {
     }
 
     .main-navbar a {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
