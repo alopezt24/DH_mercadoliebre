@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -35,21 +35,34 @@ header{
 
 header div.logo,
 header .form{
-    width: 50%;
+    width:50%;
 }
 
 header div.logo{
     padding: 10px;
 }
+
 header .form{
     display: flex;
     align-items: center;
     padding: 2px;
     font-size: 11px;
+
 }
+
+.header-txt-compras {
+    font-size: 12px;
+    font-weight: 100px;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px;
+}
+
 header nav{
     font-size: 12px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 header ul li{
@@ -67,6 +80,7 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    width: 90%;
 }
 
 header .form .submit{
@@ -144,7 +158,7 @@ footer section article:hover i {
 
  /* agregar las sombras */
 main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 section.banner img{
@@ -198,8 +212,150 @@ article div.main-article{
     padding: 15px;
 }
 
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    display:  inline-block;
+    color: #222;
+    padding: 5px 0;
+}
+
+.top-header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.register,
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.login label {
+    display: none;
+
+}
+
+.register input,
+.login input {
+    width: 100%;
+    padding: 8px;
+    margin: 20px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.enviar,
+.borrar {
+    background-color: #1259c3;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.profile,
+.interests {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.profile input,
+.interests  input{
+    width: 15px;
+    margin: 3px 20px 20px 3px;
+    }
+
+.register h3 {
+    margin: 20px 0;
+    }
+
+.profile{
+    margin-bottom: 50px;
+    }
+
+.image-profile h3{
+    margin-bottom: 0px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #666;
+    background-color: white;
+    margin: 60px, 0;
+    padding: 40px;
+    text-align: center;
+}
+
+footer section{
+    margin: 20px;
+}
+
+footer section p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+footer section .icon {
+    margin-top: 40px;
+    color: #1259c3;
+    font-size: 2em;
+    transition: all 500ms;
+}
+
+footer section:hover .icon {
+    color: green;
+}
+/* tablet */
 @media (min-width: 361px){
+    .top-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header div.logo,
+        header .form{
+        width:33%;
+    }
+
+    .header-txt-compras {
+        width: 33%;
+        font-size: 12px;
+    }
+
+    main section article .description{
+        opacity: 0%;
+        transition: opacity 450ms;
+    }
+
+    main section article:hover .description{
+        opacity: 100%;
+    }
+
     main section article{
+        transition: box-shadow 450ms;
+    }
+
+    main section article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
@@ -220,9 +376,34 @@ article div.main-article{
         width: 50%;
     }
 }
-
+/* desktop */
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
+    }
+
+    .header-txt-compras {
+        max-width: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .main-navbar a {
+        font-size: 12px;
     }
 }
